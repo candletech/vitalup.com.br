@@ -36,6 +36,14 @@ h1, h2, h3, h4, h5, h6 {
   .text-green {
     color: #63B5B6 !important; }
 
+  .text-blue-light {
+    color: #64b4c8 !important;
+  }
+
+  .text-sub-title-section {
+    color: #0c3d51 !important;
+  }
+
 .bg-black {
   background: #000 !important; }
 
