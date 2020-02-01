@@ -30,6 +30,12 @@ h1, h2, h3, h4, h5, h6 {
 .overflow-hidden {
   overflow: hidden; }
 
+  .fill {object-fit: fill;}
+  .contain {object-fit: contain;}
+  .cover {object-fit: cover;}
+  .scale-down {object-fit: scale-down;}
+  .none {object-fit: none;}
+
 .text-black {
   color: #000 !important; }
 
@@ -112,6 +118,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-black {
   background: #000; }
+
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 70px;
+  width: 70px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid #63B5B6;
+  background-image: none;
+  background-color: #63B5B6
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 35px;
+  color: #FFFF;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 35px;
+  color: #FFFF;
+}
 
 .form-control {
   height: 47px;
