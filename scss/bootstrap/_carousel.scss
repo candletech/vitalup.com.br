@@ -25,7 +25,9 @@
   overflow: hidden;
   @include clearfix();
 }
-
+.carousel-inner > .item {
+  height: 400px;
+}
 .carousel-item {
   position: relative;
   display: none;
