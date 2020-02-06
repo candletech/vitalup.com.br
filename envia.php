@@ -47,10 +47,10 @@ $response = curl_exec($session);
 // print everything out
 //var_dump($response,curl_error($session),curl_getinfo($session));
 
-// echo ("<SCRIPT LANGUAGE='JavaScript'>
-// 	window.alert('Enviado com Sucesso !')
-// 	window.location.href='index.php';
-// 	</SCRIPT>");
+echo ("<SCRIPT LANGUAGE='JavaScript'>
+	window.alert('Enviado com Sucesso !')
+	window.location.href='index.html';
+	</SCRIPT>");
 
 curl_close($session);
 
