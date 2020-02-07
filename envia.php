@@ -1,13 +1,13 @@
 <?php
 
 $url = 'https://api.sendgrid.com/';
-$user = 'lipaiufu';
+$user = 'candletech';
 $pass = 'thesims123!@#';
 
 
 $name = $_POST["name"];
 $from = $_POST["email"];
-$subject = "Contato - Vital UP";
+$subject = "Contato - Vital Up";
 $text = $name.': '.$_POST["message"];
 
 
@@ -15,7 +15,7 @@ $text = $name.': '.$_POST["message"];
 $params = array(
 	'api_user'  => $user,
 	'api_key'   => $pass,
-	'to'        => 'anapessoa@vitalup.com.br',
+	'to'        => 'contato@vitalup.com.br',
 	'subject'   => $subject,
 	'html'      => $text,
 	'text'      => $text,
