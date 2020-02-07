@@ -1,8 +1,8 @@
 <?php
 
 $url = 'https://api.sendgrid.com/';
-$user = 'candletech';
-$pass = 'thesims123!@#';
+$user = 'vitalup';
+$pass = 'Vital@2019';
 
 
 $name = $_POST["name"];
@@ -54,3 +54,16 @@ echo ("<SCRIPT LANGUAGE='JavaScript'>
 
 curl_close($session);
 
+$email = new \SendGrid\Mail\Mail(); 
+$email->setFrom($from, $name);
+$email->setSubject("Contato - Vital Up");
+$email->addContent($text);
+$sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: '. $e->getMessage() ."\n";
+}
