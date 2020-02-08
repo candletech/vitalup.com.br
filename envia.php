@@ -10,60 +10,26 @@ $from = $_POST["email"];
 $subject = "Contato - Vital Up";
 $text = $name.': '.$_POST["message"];
 
+require_once('sendgrid-php/sendgrid-php.php');
 
+$from = new SendGrid\Email(null, $_POST["email"]);
+$subject = "Contato - Vital Up";
+$to = new SendGrid\Email(null, "contato@vitalup.com.br");
+$content = new SendGrid\Content("text/plain", $_POST["message"]);
+$mail = new SendGrid\Mail($from, $subject, $to, $content);
 
-$params = array(
-	'api_user'  => $user,
-	'api_key'   => $pass,
-	'to'        => 'contato@vitalup.com.br',
-	'subject'   => $subject,
-	'html'      => $text,
-	'text'      => $text,
-	'from'      => $from,
-);
+$apiKey = '123Pingo456Floquinho';
+$sg = new \SendGrid($apiKey);
 
-$request =  $url.'api/mail.send.json';
-
-// Generate curl request
-$session = curl_init($request);
-// Tell curl to use HTTP POST
-curl_setopt ($session, CURLOPT_POST, true);
-// Tell curl that this is the body of the POST
-curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
-// Tell curl not to return headers, but do return the response
-curl_setopt($session, CURLOPT_HEADER, false);
-// Tell PHP not to use SSLv3 (instead opting for TLS)
-//curl_setopt($session, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2);
-
-//Turn off SSL
-curl_setopt($session, CURLOPT_SSL_VERIFYPEER, false);//New line
-curl_setopt($session, CURLOPT_SSL_VERIFYHOST, false);//New line
-
-curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
-
-// obtain response
-$response = curl_exec($session);
-
-// print everything out
-//var_dump($response,curl_error($session),curl_getinfo($session));
-
-echo ("<SCRIPT LANGUAGE='JavaScript'>
+$response = $sg->client->mail()->send()->post($mail);
+if($response->statusCode() == 202){
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
 	window.alert('Enviado com Sucesso !')
 	window.location.href='index.html';
 	</SCRIPT>");
-
-curl_close($session);
-
-$email = new \SendGrid\Mail\Mail(); 
-$email->setFrom($from, $name);
-$email->setSubject("Contato - Vital Up");
-$email->addContent($text);
-$sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
-try {
-    $response = $sendgrid->send($email);
-    print $response->statusCode() . "\n";
-    print_r($response->headers());
-    print $response->body() . "\n";
-} catch (Exception $e) {
-    echo 'Caught exception: '. $e->getMessage() ."\n";
+}else{
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
+	window.alert('Ocorreu um erro ao enviar, tente novamente.')
+	window.location.href='index.html';
+	</SCRIPT>");
 }
