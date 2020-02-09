@@ -178,6 +178,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 70%;
   margin-left: 15%
 }
+.site-section .slider .d-block__vertical{
+  width: fit-content !important;
+  margin-left: 34% !important;
+}
+.site-section .slider .d-block__vertical-ft422_01{
+  width: 28%;
+  margin-left: 38% !important;
+}
 .site-section-heading {
   font-size: 30px;
   color: #dee2e6;
