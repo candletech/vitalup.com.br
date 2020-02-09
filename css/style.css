@@ -55,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .text-sub-title-section {
+    font-size: 1rem;
     color: #0c3d51 !important;
   }
 
@@ -164,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none !important; }
 
 .site-section {
-  padding: 4.5em 0; }
+  padding: 0 4.5em 0 4.5em; }
   @media (min-width: 768px) {
     .site-section {
       padding: 7em 0; } }
@@ -199,8 +200,7 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid #ced4da !important; }
 
 .site-footer {
-  padding-top: 17rem;
-  padding-bottom: 4rem;
+  padding: 5rem 0 5rem 0;
   background: #333333; }
   .site-footer p {
     color: #8c8c8c; }
@@ -634,8 +634,8 @@ h1, h2, h3, h4, h5, h6 {
         top: 0;
         height: 100%;
         width: 100%;
-        -o-object-fit: cover;
-        object-fit: cover; }
+        -o-object-fit: contain;
+        object-fit: contain; }
   .site-blocks-cover .intro {
     z-index: 3;
     position: relative; }
@@ -672,7 +672,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.3rem; }
 
 .section-title .sub-title {
-  font-size: .75rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
   font-weight: 400;
