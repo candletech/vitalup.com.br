@@ -171,7 +171,13 @@ h1, h2, h3, h4, h5, h6 {
       padding: 7em 0; } }
   .site-section.site-section-sm {
     padding: 4em 0; }
-
+.site-section .slider {
+  height: 800px;
+}
+.site-section .slider .d-block{ 
+  width: 70%;
+  margin-left: 15%
+}
 .site-section-heading {
   font-size: 30px;
   color: #dee2e6;
@@ -600,6 +606,10 @@ h1, h2, h3, h4, h5, h6 {
     @media (max-width: 991.98px) {
       .site-blocks-cover .sub-text {
         color: #000; } }
+  .site-blocks-cover .img-wrap__full {
+    width: 100% !important;
+    right: unset !important;
+  }
   .site-blocks-cover .img-wrap {
     position: absolute;
     z-index: -1;
