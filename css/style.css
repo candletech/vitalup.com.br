@@ -90,6 +90,22 @@ h6 {
     color: #0c3d51 !important;
 }
 
+.text-about-section {
+    font-size: 1.5rem;
+    color: #0c3d51 !important;
+    text-align: justify;
+}
+
+.text-product-section {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.text-card-section {
+    font-size: 2rem;
+    text-align: left;
+}
+
 .bg-black {
     background: #000 !important;
 }
@@ -256,7 +272,7 @@ h6 {
 
 .site-section .slider .d-block__vertical {
     width: fit-content !important;
-    margin-left: 34% !important;
+    margin-left: 24% !important;
 }
 
 .site-section .slider .d-block__vertical-ft422_01 {
@@ -1048,7 +1064,7 @@ h6 {
 }
 
 .service {
-    padding: 30px;
+    padding: 40px;
     background: #fff;
     border: 1px solid #eee;
     border-top: 2px solid #63B5B6;
@@ -1079,7 +1095,7 @@ h6 {
 
 .service p {
     color: #999999;
-    font-size: .85rem;
+    font-size: 1.2rem;
 }
 
 .readmore {
