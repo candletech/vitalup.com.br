@@ -96,6 +96,10 @@ h6 {
     text-align: justify;
 }
 
+.text-about-info {
+    display: none;
+}
+
 .text-product-section {
     font-size: 1.2rem;
     text-align: center;
@@ -258,17 +262,10 @@ h6 {
     .text-about-section {
         font-size: 1.5rem;
     }
-    .site-section .slider {
-        height: 800px;
-    }
 }
 
 .site-section.site-section-sm {
     padding: 4em 0;
-}
-
-.site-section .slider {
-    height: 650px;
 }
 
 .site-section .slider .d-block {
@@ -982,13 +979,19 @@ h6 {
     .site-blocks-cover .img-wrap .hero-slider:before {
         position: absolute;
         content: "";
-        background: #fff;
-        opacity: .5;
+        /* background: #fff; */
+        /* opacity: .5; */
         z-index: 2;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
+    }
+    .home-text {
+        display: none;
+    }
+    .text-about-info {
+        display: block;
     }
 }
 
