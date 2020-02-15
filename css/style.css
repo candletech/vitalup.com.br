@@ -281,11 +281,11 @@ h6 {
 }
 
 .site-section .slider .d-block__echo {
-    display: block;
+    position: static;
+    width: fit-content !important;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
-    height: 30%;
+    height: 50px;
 }
 
 .site-section-heading {
