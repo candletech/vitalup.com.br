@@ -206,8 +206,8 @@ h6 {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    height: 70px;
-    width: 70px;
+    height: 2em;
+    width: 2em;
     outline: black;
     background-size: 100%, 100%;
     border-radius: 50%;
@@ -218,13 +218,13 @@ h6 {
 
 .carousel-control-next-icon:after {
     content: '>';
-    font-size: 35px;
+    font-size: 1.2em;
     color: #FFFF;
 }
 
 .carousel-control-prev-icon:after {
     content: '<';
-    font-size: 35px;
+    font-size: 1.2em;
     color: #FFFF;
 }
 
@@ -252,11 +252,14 @@ h6 {
 }
 
 @media (min-width: 768px) {
-    .section-title .title {
+    ousel-control-next-i .section-title .title {
         font-size: 2.2rem;
     }
     .text-about-section {
         font-size: 1.5rem;
+    }
+    .site-section .slider {
+        height: 800px;
     }
 }
 
@@ -265,7 +268,7 @@ h6 {
 }
 
 .site-section .slider {
-    height: 800px;
+    height: 650px;
 }
 
 .site-section .slider .d-block {
@@ -1016,6 +1019,10 @@ h6 {
         padding: 10px;
         border-radius: 2px;
         top: -50px;
+    }
+    .service {
+        padding: 20px;
+        margin: 10px;
     }
 }
 
