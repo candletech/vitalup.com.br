@@ -91,7 +91,7 @@ h6 {
 }
 
 .text-about-section {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #0c3d51 !important;
     text-align: justify;
 }
@@ -206,8 +206,8 @@ h6 {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    height: 70px;
-    width: 70px;
+    height: 2em;
+    width: 2em;
     outline: black;
     background-size: 100%, 100%;
     border-radius: 50%;
@@ -218,13 +218,13 @@ h6 {
 
 .carousel-control-next-icon:after {
     content: '>';
-    font-size: 35px;
+    font-size: 1.2em;
     color: #FFFF;
 }
 
 .carousel-control-prev-icon:after {
     content: '<';
-    font-size: 35px;
+    font-size: 1.2em;
     color: #FFFF;
 }
 
@@ -248,12 +248,18 @@ h6 {
 }
 
 .site-section {
-    padding: 0 4.5em 0 4.5em;
+    padding: 7em 0;
 }
 
 @media (min-width: 768px) {
-    .site-section {
-        padding: 7em 0;
+    ousel-control-next-i .section-title .title {
+        font-size: 2.2rem;
+    }
+    .text-about-section {
+        font-size: 1.5rem;
+    }
+    .site-section .slider {
+        height: 800px;
     }
 }
 
@@ -262,7 +268,7 @@ h6 {
 }
 
 .site-section .slider {
-    height: 800px;
+    height: 650px;
 }
 
 .site-section .slider .d-block {
@@ -1003,6 +1009,21 @@ h6 {
 .site-blocks-cover .intro {
     z-index: 3;
     position: relative;
+    background: 100px;
+}
+
+@media (max-width: 540.98px) {
+    .site-blocks-cover .intro {
+        background: #e4e4e4d4;
+        border: 1px solid #eee;
+        padding: 10px;
+        border-radius: 2px;
+        top: -50px;
+    }
+    .service {
+        padding: 20px;
+        margin: 10px;
+    }
 }
 
 .site-blocks-cover .intro .heading {
@@ -1060,7 +1081,7 @@ h6 {
 }
 
 .section-title .title {
-    font-size: 2.2rem;
+    font-size: 1rem;
 }
 
 .service {
