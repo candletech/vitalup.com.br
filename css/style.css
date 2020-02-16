@@ -288,7 +288,8 @@ h6 {
 }
 
 .site-section .slider .d-block__echo {
-    margin-left: 95%
+    margin-left: 50%;
+    margin-right: 50
 }
 
 .site-section-heading {
