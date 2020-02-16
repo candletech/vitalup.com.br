@@ -9,12 +9,12 @@ body {
 }
 
 ::-moz-selection {
-    background: #000;
+    background: rgba(0, 0, 0, 0.021);
     color: #fff;
 }
 
 ::selection {
-    background: #000;
+    background: gray;
     color: #fff;
 }
 
@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #000;
+    color: #031851;
 }
 
 .position-relative {
@@ -965,7 +965,7 @@ h6 {
     height: 100%;
     z-index: 2;
     right: 50%;
-    min-height: 600px;
+    min-height: 500px;
     overflow: hidden;
     border-bottom-right-radius: 200px;
 }
