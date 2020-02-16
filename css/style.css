@@ -114,6 +114,10 @@ h6 {
     background: #000 !important;
 }
 
+.img-rounded {
+    border-radius: 40px;
+}
+
 .site-wrap:before {
     -webkit-transition: .3s all ease-in-out;
     -o-transition: .3s all ease-in-out;
@@ -1340,8 +1344,8 @@ h6 {
 .testimonial {
     padding: 30px;
     color: #000;
-    -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 3px 5px 0 rgba(3, 24, 81, 0.45);
+    box-shadow: 0 3px 5px 0 rgba(3, 24, 81, 0.35);
     line-height: 1.7;
     font-style: italic;
 }
