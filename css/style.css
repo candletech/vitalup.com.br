@@ -110,6 +110,13 @@ h6 {
     text-align: left;
 }
 
+.text-edge {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #63B5B6;
+    font-size: 3em;
+    color: #ffffff;
+}
+
 .bg-black {
     background: #000 !important;
 }
