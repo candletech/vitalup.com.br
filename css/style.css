@@ -227,6 +227,50 @@ h6 {
     margin-top: 16px;
 }
 
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.body-box {
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box select {
+    padding: 30px;
+    background-color: #63B5B6;
+    color: white;
+    height: 30px;
+    border: none;
+    font-size: 18px;
+    -webkit-appearance: button;
+    outline: none;
+}
+
+.box::before {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    font-size: 20px;
+}
+
+.box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+    padding: 60px;
+}
+
 .bg-black {
     background: #000;
 }
@@ -1316,6 +1360,14 @@ h6 {
     -webkit-box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.1);
     margin-bottom: -15em;
+}
+
+.budget-form {
+    padding: 30px;
+    position: relative;
+    background: #fff;
+    -webkit-box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.1);
 }
 
 .jm-sticky-top {
