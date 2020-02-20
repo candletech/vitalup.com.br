@@ -336,6 +336,10 @@ h6 {
     .text-about-section {
         font-size: 1.5rem;
     }
+    .text-slogan-green {
+        font-size: 1.75rem;
+        color: #63B5B6 !important;
+    }
 }
 
 .site-section.site-section-sm {
