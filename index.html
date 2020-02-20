@@ -1,1200 +1,350 @@
-/* Base */ body { line-height: 1.7; color: gray; font-weight: 300; font-size: 1rem; font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-"Segoe UI Symbol", "Noto Color Emoji"; } ::-moz-selection { background: rgba(0, 0, 0, 0.021); color: #fff; } ::selection { background: gray; color: #fff; } a { -webkit-transition: .3s all ease; -o-transition: .3s all ease; transition: .3s all ease; }
-a:hover { text-decoration: none; } h1, h2, h3, h4, h5, h6 { color: #031851; } .position-relative { position: relative !important; } .fixed-height-container { position: relative; width: 100%; height: 600px; } .overflow-hidden { overflow: hidden; } .fill
-{ object-fit: fill; } .contain { object-fit: contain; } .cover { object-fit: cover; } @supports (object-fit: scale-down) { .scale-down { object-fit: scale-down; } } .none { object-fit: none; } .text-black { color: #000 !important; } .text-green { color:
-#63B5B6 !important; } .text-blue-light { color: #64b4c8 !important; } .text-sub-title-section { font-size: 1rem; color: #0c3d51 !important; } .text-about-section { font-size: 1rem; color: #0c3d51 !important; text-align: justify; } .text-about-info { display:
-none; } .text-product-section { font-size: 1.2rem; text-align: center; } .text-card-section { font-size: 2rem; text-align: left; } .bg-black { background: #000 !important; } .img-rounded { border-radius: 40px; } .site-wrap:before { -webkit-transition:
-.3s all ease-in-out; -o-transition: .3s all ease-in-out; transition: .3s all ease-in-out; background: rgba(0, 0, 0, 0.2); content: ""; position: absolute; z-index: 2000; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; visibility: hidden; } .offcanvas-menu
-.site-wrap { height: 100%; width: 100%; z-index: 2; overflow: hidden; } .offcanvas-menu .site-wrap:before { opacity: 1; visibility: visible; } .offcanvas-menu { position: relative; } .offcanvas-menu:after { position: absolute; content: ""; top: 0; left:
-0; top: 0; right: 0; z-index: 21; background: rgba(0, 0, 0, 0.2); } .btn { border-width: 2px; border-radius: 30px; } .btn:active, .btn:focus { outline: none; -webkit-box-shadow: none !important; box-shadow: none !important; } .btn.btn-lg { padding: 10px
-20px; font-size: 16px; } .btn.btn-primary { color: #fff; } .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active { border-color: #63B5B6 !important; color: #63B5B6 !important; background-color: transparent !important; } .btn.btn-outline-primary
-{ color: #63B5B6; border-color: #63B5B6 !important; background-color: transparent !important; } .btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus, .btn.btn-outline-primary:active { border-color: #63B5B6 !important; color: #fff !important;
-background-color: #63B5B6 !important; } .btn.btn-md { padding: 14px 30px; } .float { position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px;
-box-shadow: 2px 2px 3px #999; z-index: 100; } .my-float { margin-top: 16px; } .box { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); } .body-box { padding: 30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing:
-border-box; } .box select { padding: 30px; background-color: #63B5B6; color: white; height: 30px; border: none; font-size: 18px; -webkit-appearance: button; outline: none; } .box::before { -webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing:
-inherit; position: absolute; right: 0; height: 100%; font-size: 20px; } .box:hover::before { color: rgba(255, 255, 255, 0.6); background-color: rgba(255, 255, 255, 0.2); } .box select option { padding: 60px; } .bg-black { background: #000; } .carousel-control-prev-icon,
-.carousel-control-next-icon { height: 2em; width: 2em; outline: black; background-size: 100%, 100%; border-radius: 50%; border: 1px solid #63B5B6; background-image: none; background-color: #63B5B6 } .carousel-control-next-icon:after { content: '>'; font-size:
-1.2em; color: #FFFF; } .carousel-control-prev-icon:after { content: '< ';
-    font-size: 1.2em;
-    color: #FFFF;
-}
-
-.form-control {
-    height: 47px;
-    background: #f6f6f6;
-    border-radius: 30;
-    border: 1px solid #f6f6f6;
-}
-
-.form-control:active,
-.form-control:focus {
-    border-color: #63B5B6;
-}
-
-.form-control:hover,
-.form-control:active,
-.form-control:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-}
-
-.site-section {
-    padding: 7em 0;
-}
-
-@media (min-width: 768px) {
-    ousel-control-next-i .section-title .title {
-        font-size: 2.2rem;
-    }
-    .text-about-section {
-        font-size: 1.5rem;
-    }
-}
-
-.site-section.site-section-sm {
-    padding: 4em 0;
-}
-
-.site-section .slider .d-block {
-    width: 70%;
-    margin-left: 15%
-}
-
-.site-section .slider .d-block__vertical {
-    width: fit-content !important;
-    margin-left: 24% !important;
-}
-
-.site-section .slider .d-block__vertical-ft422 {
-    width: 28%;
-    margin-left: 38% !important;
-}
-
-.site-section .slider .d-block__echo {
-    width: 50%;
-    /* margin: 38% !important; */
-    position: relative;
-}
-
-.site-section-heading {
-    font-size: 30px;
-    color: #dee2e6;
-    position: relative;
-}
-
-.site-section-heading:before {
-    content: "";
-    left: 0%;
-    top: 0;
-    position: absolute;
-    width: 40px;
-    height: 2px;
-    background: #63B5B6;
-}
-
-.site-section-heading.text-center:before {
-    content: "";
-    left: 50%;
-    top: 0;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    position: absolute;
-    width: 40px;
-    height: 2px;
-    background: #63B5B6;
-}
-
-.border-top {
-    border-top: 1px solid #ced4da !important;
-}
-
-.site-footer {
-    padding: 3rem 0 0rem 0;
-    background: #333333;
-}
-
-.site-footer p {
-    color: #8c8c8c;
-}
-
-.site-footer h2,
-.site-footer h3,
-.site-footer h4,
-.site-footer h5 {
-    color: #fff;
-}
-
-.site-footer a {
-    color: #b3b3b3;
-}
-
-.site-footer a:hover {
-    color: white;
-}
-
-.site-footer ul li {
-    margin-bottom: 10px;
-}
-
-.site-footer .footer-heading {
-    font-size: 20px;
-    color: #fff;
-}
-
-.bg-text-line {
-    display: inline;
-    background: #000;
-    -webkit-box-shadow: 20px 0 0 #000, -20px 0 0 #000;
-    box-shadow: 20px 0 0 #000, -20px 0 0 #000;
-}
-
-.bg-image {
-    background-size: cover;
-    background-repeat: no-rpeeat;
-    overflow: hidden;
-}
-
-.bg-image.center {
-    background-position: top center;
-}
-
-.bg-image.fixed {
-    background-position: fixed !important;
-}
-
-.bg-image.overlay,
-.bg-image.overlay-primary,
-.bg-image.overlay-info,
-.bg-image.overlay-success,
-.bg-image.overlay-warning {
-    position: relative;
-}
-
-.bg-image.overlay:before,
-.bg-image.overlay-primary:before,
-.bg-image.overlay-info:before,
-.bg-image.overlay-success:before,
-.bg-image.overlay-warning:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
-.bg-image.overlay:before {
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.bg-image.overlay-primary:before {
-    background: rgba(99, 181, 182, 0.9);
-}
-
-.bg-image.overlay-info:before {
-    background: rgba(47, 240, 193, 0.9);
-}
-
-.bg-image.overlay-success:before {
-    background: rgba(40, 167, 69, 0.9);
-}
-
-.bg-image.overlay-success:before {
-    background: rgba(255, 193, 7, 0.9);
-}
-
-
-/* Navbar */
-
-.site-navbar-wrap {
-    position: relative;
-    z-index: 99;
-    width: 100%;
-    left: 0;
-    background: #fff;
-}
-
-.site-navbar-wrap a {
-    color: #000;
-}
-
-.site-navbar-wrap .site-navbar-top {
-    font-size: 0.8rem;
-}
-
-.site-navbar-top {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.site-navbar {
-    margin-bottom: 0px;
-    width: 100%;
-    padding: 15px 0;
-}
-
-.site-navbar .site-logo {
-    font-weight: 200;
-    line-height: 0;
-    position: relative;
-}
-
-.site-navbar .site-logo a {
-    font-weight: 200;
-    color: #000;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.site-navbar .site-navigation .site-menu {
-    margin-bottom: 0;
-}
-
-.site-navbar .site-navigation .site-menu a {
-    text-decoration: none !important;
-    display: inline-block;
-    font-weight: 500;
-}
-
-.site-navbar .site-navigation .site-menu>li {
-    display: inline-block;
-    padding: 10px 5px;
-}
-
-.site-navbar .site-navigation .site-menu>li>a {
-    padding: 20px 10px;
-    color: black;
-    font-size: 15px;
-    text-decoration: none !important;
-}
-
-.site-navbar .site-navigation .site-menu>li>a.active {
-    color: #fff;
-}
-
-.site-navbar .site-navigation .site-menu>li>a:hover {
-    color: #fff;
-}
-
-.site-navbar .site-navigation .site-menu>li:last-child {
-    padding-right: 0;
-}
-
-.site-navbar .site-navigation .site-menu>li:last-child>a {
-    padding-right: 0;
-}
-
-.site-navbar .site-navigation .site-menu .has-children {
-    position: relative;
-}
-
-.site-navbar .site-navigation .site-menu .has-children>a {
-    position: relative;
-    padding-right: 20px;
-}
-
-.site-navbar .site-navigation .site-menu .has-children>a:before {
-    position: absolute;
-    content: "\e313";
-    font-size: 16px;
-    top: 50%;
-    right: 0;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-family: 'icomoon ';
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown {
-    visibility: hidden;
-    opacity: 0;
-    top: 100%;
-    position: absolute;
-    text-align: left;
-    -webkit-box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 0px 0;
-    margin-top: 20px;
-    margin-left: 0px;
-    background: #fff;
-    -webkit-transition: 0.2s 0s;
-    -o-transition: 0.2s 0s;
-    transition: 0.2s 0s;
-    border-radius: 4px;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top {
-    position: absolute;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
-    bottom: 100%;
-    left: 20%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
-    border-color: rgba(136, 183, 213, 0);
-    border-bottom-color: #fff;
-    border-width: 10px;
-    margin-left: -10px;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown a {
-    font-size: 14px;
-    text-transform: none;
-    letter-spacing: normal;
-    -webkit-transition: 0s all;
-    -o-transition: 0s all;
-    transition: 0s all;
-    color: #343a40;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown a.active {
-    color: #63B5B6;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown .active>a {
-    color: #fff !important;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown>li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 200px;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown>li:first-child>a {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown>li:last-child>a {
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown>li>a {
-    padding: 9px 20px;
-    display: block;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown>li>a:hover {
-    background: #ebeef0;
-    color: #212529;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown>li.has-children>a:before {
-    content: "\e315";
-    right: 20px;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown>li.has-children>.dropdown,
-.site-navbar .site-navigation .site-menu .has-children .dropdown>li.has-children>ul {
-    left: 100%;
-    top: 0;
-}
-
-.site-navbar .site-navigation .site-menu .has-children .dropdown>li.has-children:hover>a,
-.site-navbar .site-navigation .site-menu .has-children .dropdown>li.has-children:active>a,
-.site-navbar .site-navigation .site-menu .has-children .dropdown>li.has-children:focus>a {
-    background: #ebeef0;
-    color: #212529;
-}
-
-.site-navbar .site-navigation .site-menu .has-children:hover>a,
-.site-navbar .site-navigation .site-menu .has-children:focus>a,
-.site-navbar .site-navigation .site-menu .has-children:active>a {
-    color: #fff;
-}
-
-.site-navbar .site-navigation .site-menu .has-children:hover,
-.site-navbar .site-navigation .site-menu .has-children:focus,
-.site-navbar .site-navigation .site-menu .has-children:active {
-    cursor: pointer;
-}
-
-.site-navbar .site-navigation .site-menu .has-children:hover>.dropdown,
-.site-navbar .site-navigation .site-menu .has-children:focus>.dropdown,
-.site-navbar .site-navigation .site-menu .has-children:active>.dropdown {
-    -webkit-transition-delay: 0s;
-    -o-transition-delay: 0s;
-    transition-delay: 0s;
-    margin-top: 0px;
-    visibility: visible;
-    opacity: 1;
-}
-
-.site-mobile-menu {
-    width: 300px;
-    position: fixed;
-    right: 0;
-    z-index: 2000;
-    padding-top: 20px;
-    background: #fff;
-    height: calc(100vh);
-    -webkit-transform: translateX(110%);
-    -ms-transform: translateX(110%);
-    transform: translateX(110%);
-    -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
-    box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
-    -webkit-transition: .3s all ease-in-out;
-    -o-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
-}
-
-.offcanvas-menu .site-mobile-menu {
-    -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    transform: translateX(0%);
-}
-
-.site-mobile-menu .site-mobile-menu-header {
-    width: 100%;
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close {
-    float: right;
-    margin-top: 8px;
-}
-
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span {
-    font-size: 30px;
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 0px;
-    line-height: 1;
-    cursor: pointer;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-}
-
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span:hover {
-    color: #dee2e6;
-}
-
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo {
-    float: left;
-    margin-top: 10px;
-    margin-left: 0px;
-}
-
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a {
-    display: inline-block;
-    text-transform: uppercase;
-}
-
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a img {
-    max-width: 70px;
-}
-
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a:hover {
-    text-decoration: none;
-}
-
-.site-mobile-menu .site-mobile-menu-body {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    padding: 20px;
-    height: calc(100vh - 52px);
-    padding-bottom: 150px;
-}
-
-.site-mobile-menu .site-nav-wrap {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-}
-
-.site-mobile-menu .site-nav-wrap a {
-    padding: 10px 20px;
-    display: block;
-    position: relative;
-    color: #212529;
-}
-
-.site-mobile-menu .site-nav-wrap a.active,
-.site-mobile-menu .site-nav-wrap a:hover {
-    color: #63B5B6;
-}
-
-.site-mobile-menu .site-nav-wrap li {
-    position: relative;
-    display: block;
-}
-
-.site-mobile-menu .site-nav-wrap li.active>a {
-    color: #63B5B6;
-}
-
-.site-mobile-menu .site-nav-wrap .arrow-collapse {
-    position: absolute;
-    right: 0px;
-    top: 10px;
-    z-index: 20;
-    width: 36px;
-    height: 36px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
-    background: #f8f9fa;
-}
-
-.site-mobile-menu .site-nav-wrap .arrow-collapse:before {
-    font-size: 12px;
-    z-index: 20;
-    font-family: "icomoon";
-    content: "\f078";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) rotate(-180deg);
-    -ms-transform: translate(-50%, -50%) rotate(-180deg);
-    transform: translate(-50%, -50%) rotate(-180deg);
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-}
-
-.site-mobile-menu .site-nav-wrap .arrow-collapse.collapsed:before {
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.site-mobile-menu .site-nav-wrap>li {
-    display: block;
-    position: relative;
-    float: left;
-    width: 100%;
-}
-
-.site-mobile-menu .site-nav-wrap>li>a {
-    padding-left: 20px;
-    font-size: 20px;
-}
-
-.site-mobile-menu .site-nav-wrap>li>ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.site-mobile-menu .site-nav-wrap>li>ul>li {
-    display: block;
-}
-
-.site-mobile-menu .site-nav-wrap>li>ul>li>a {
-    padding-left: 40px;
-    font-size: 16px;
-}
-
-.site-mobile-menu .site-nav-wrap>li>ul>li>ul {
-    padding: 0;
-    margin: 0;
-}
-
-.site-mobile-menu .site-nav-wrap>li>ul>li>ul>li {
-    display: block;
-}
-
-.site-mobile-menu .site-nav-wrap>li>ul>li>ul>li>a {
-    font-size: 16px;
-    padding-left: 60px;
-}
-
-.sticky-wrapper {
-    z-index: 100;
-    width: 100%;
-}
-
-.sticky-wrapper+.site-blocks-cover {
-    margin-top: 140px;
-}
-
-.sticky-wrapper .site-navbar {
-    background-color: #fff;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-}
-
-.sticky-wrapper .site-navbar a.active {
-    color: #fff;
-}
-
-.sticky-wrapper.is-sticky .site-navbar {
-    background-color: #fff;
-    -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
-    box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
-}
-
-.sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li {
-    display: inline-block;
-    padding: 10px 5px;
-}
-
-.sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li:last-child {
-    padding-right: 0;
-}
-
-.sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li:last-child>a {
-    padding-right: 0;
-}
-
-.sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li.has-children>a {
-    padding-right: 20px;
-}
-
-.sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li>a {
-    padding: 10px 10px;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 15px;
-}
-
-.sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li>a.active {
-    color: #fff;
-}
-
-.sticky-wrapper .shrink {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-}
-
-
-/* Blocks */
-
-.site-blocks-cover {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.site-blocks-cover.overlay {
-    position: relative;
-}
-
-.site-blocks-cover.overlay:before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.site-blocks-cover,
-.site-blocks-cover>.container>.row {
-    min-height: 600px;
-    height: calc(100vh);
-}
-
-.site-blocks-cover.inner-page,
-.site-blocks-cover.inner-page>.container>.row {
-    min-height: 600px;
-    height: calc(80vh);
-}
-
-.site-blocks-cover h1 {
-    font-size: 8rem;
-    font-weight: 900;
-    line-height: 1;
-}
-
-@media (max-width: 991.98px) {
-    .site-blocks-cover h1 {
-        font-size: 4rem;
-    }
-}
-
-.site-blocks-cover .sub-text {
-    font-size: 1.4rem;
-    color: gray;
-    font-weight: 300;
-}
-
-@media (max-width: 991.98px) {
-    .site-blocks-cover .sub-text {
-        color: #000;
-    }
-}
-
-.site-blocks-cover .img-wrap__full {
-    width: 100% !important;
-    right: unset !important;
-}
-
-.site-blocks-cover .img-wrap {
-    position: absolute;
-    z-index: -1;
-    width: calc(100% - 50%);
-    top: 0;
-    height: 100%;
-    z-index: 2;
-    right: 50%;
-    min-height: 500px;
-    overflow: hidden;
-    border-bottom-right-radius: 200px;
-}
-
-@media (max-width: 991.98px) {
-    .site-blocks-cover .img-wrap {
-        width: 100%;
-        right: 0%;
-        top: 0;
-    }
-    .site-blocks-cover .img-wrap .hero-slider:before {
-        position: absolute;
-        content: "";
-        /* background: #fff; */
-        /* opacity: .5; */
-        z-index: 2;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    .home-text {
-        display: none;
-    }
-    .text-about-info {
-        display: block;
-    }
-}
-
-.site-blocks-cover .img-wrap .slide {
-    height: 100vh;
-    position: relative;
-}
-
-.site-blocks-cover .img-wrap .slide img {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
-}
-
-.site-blocks-cover .intro {
-    z-index: 3;
-    position: relative;
-    background: 100px;
-}
-
-@media (max-width: 540.98px) {
-    .site-blocks-cover .intro {
-        background: #e4e4e4d4;
-        border: 1px solid #eee;
-        padding: 10px;
-        border-radius: 2px;
-        top: -50px;
-    }
-    .service {
-        padding: 20px;
-        margin: 10px;
-    }
-}
-
-.site-blocks-cover .intro .heading {
-    margin-left: -150px;
-}
-
-@media (max-width: 991.98px) {
-    .site-blocks-cover .intro .heading {
-        margin-left: 0;
-    }
-}
-
-.site-blocks-cover .intro .text {
-    padding-left: 50px;
-}
-
-@media (max-width: 991.98px) {
-    .site-blocks-cover .intro .text {
-        padding-left: 0;
-    }
-}
-
-.site-menu-toggle .menu-text {
-    position: relative;
-    top: -6px;
-    text-transform: uppercase;
-}
-
-.hero-slider .owl-nav {
-    position: absolute;
-    bottom: 120px;
-    right: 50px;
-    z-index: 100;
-}
-
-.hero-slider .owl-nav .owl-prev,
-.hero-slider .owl-nav .owl-next {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    background: #63B5B6;
-    color: #fff;
-    margin-bottom: 10px;
-    font-size: 1.3rem;
-}
-
-.section-title .sub-title {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    font-weight: 400;
-    color: #b3b3b3;
-}
-
-.section-title .title {
-    font-size: 1rem;
-}
-
-.service {
-    padding: 40px;
-    background: #fff;
-    border: 1px solid #eee;
-    border-top: 2px solid #63B5B6;
-    -webkit-transition: .3s all ease-in-out;
-    -o-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
-    position: relative;
-    top: 0;
-    height: f;
-}
-
-.service:hover,
-.service:focus {
-    -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
-    border: 1px solid transparent;
-    border-top: 2px solid #63B5B6;
-    top: -2px;
-}
-
-.service *:last-child {
-    margin-bottom: 0;
-}
-
-.service h3 {
-    font-size: 1rem;
-    color: #000;
-}
-
-.service p {
-    color: #999999;
-    font-size: 1.2rem;
-}
-
-.readmore {
-    position: relative;
-    padding-right: 20px;
-    text-transform: uppercase;
-    color: #63B5B6;
-    font-size: .90rem;
-    letter-spacing: .2rem;
-    font-weight: 900;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-}
-
-.readmore:after {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-    position: absolute;
-    content: "\e5c8";
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-family: 'icomoon ';
-    right: 0;
-    opacity: 0;
-    color: #63B5B6;
-    visibility: hidden;
-}
-
-.readmore:hover {
-    color: #63B5B6;
-    padding-right: 30px;
-}
-
-.readmore:hover:after {
-    color: #63B5B6;
-    opacity: 1;
-    visibility: visible;
-}
-
-.custom-progress {
-    height: 7px;
-}
-
-.custom-progress .progress-bar {
-    border-radius: 30px;
-}
-
-.ul-check {
-    margin-bottom: 50px;
-}
-
-.ul-check li {
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-
-.ul-check li:before {
-    left: 0;
-    font-size: 20px;
-    top: -.3rem;
-    font-family: "icomoon";
-    content: "\e5ca";
-    position: absolute;
-}
-
-.ul-check.white li:before {
-    color: #fff;
-}
-
-.ul-check.success li:before {
-    color: #28a745;
-}
-
-.ul-check.primary li:before {
-    color: #63B5B6;
-}
-
-.item {
-    border: none;
-    margin-bottom: 30px;
-    border-radius: 4px;
-}
-
-.item a {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    border-radius: 4px;
-}
-
-.item a img {
-    position: relative;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s all ease-in-out;
-    -o-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
-}
-
-.item .item-wrap {
-    display: block;
-    position: relative;
-}
-
-.item .item-wrap:after {
-    z-index: 2;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: .3s all ease-in-out;
-    -o-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
-}
-
-.item .item-wrap>span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 3;
-    -webkit-transform: translate(-50%, -50%) scale(0);
-    -ms-transform: translate(-50%, -50%) scale(0);
-    transform: translate(-50%, -50%) scale(0);
-    color: #fff;
-    font-size: 1.7rem;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-}
-
-.item .item-wrap:hover:after {
-    opacity: 1;
-    visibility: visible;
-}
-
-.item .item-wrap:hover span {
-    margin-top: 0px;
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-    -ms-transform: translate(-50%, -50%) scale(1);
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.item:hover a img {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    -webkit-transition: .3s all ease-in-out;
-    -o-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
-}
-
-.contact-form {
-    padding: 30px;
-    position: relative;
-    background: #fff;
-    -webkit-box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.1);
-    margin-bottom: -15em;
-}
-
-.budget-form {
-    padding: 30px;
-    position: relative;
-    background: #fff;
-    -webkit-box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.1);
-}
-
-.jm-sticky-top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 7em;
-}
-
-.twitter,
-.twitter:hover {
-    color: #1da1f2;
-}
-
-.facebook,
-.facebook:hover {
-    color: #3b5998;
-}
-
-.instagram,
-.instagram:hover {
-    color: #c13584;
-}
-
-.dribbble,
-.dribbble:hover {
-    color: #ea4c89;
-}
-
-.github,
-.github:hover {
-    color: #333;
-}
-
-.linkedin,
-.linkedin:hover {
-    color: #0077b5;
-}
-
-.person h3 {
-    font-size: 1.2rem;
-}
-
-.testimonial {
-    padding: 30px;
-    color: #000;
-    -webkit-box-shadow: 0 3px 5px 0 rgba(3, 24, 81, 0.45);
-    box-shadow: 0 3px 5px 0 rgba(3, 24, 81, 0.35);
-    line-height: 1.7;
-    font-style: italic;
-}
-
-.testimonial .vcard figure {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50px;
-    flex: 0 0 50px;
-}
-
-.testimonial .vcard figure img {
-    border-radius: 50%;
-}
-
-.testimonial .vcard .vcard-text {
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.2;
-}
-
-.testimonial .vcard .vcard-text .position {
-    color: #b3b3b3;
-}
-
-.testimonial strong {
-    font-weight: 400;
-    padding: .3rem 0;
-    background: #faf5bb;
-}
-
-.form-subscribe .form-control {
-    border-color: #031851 !important;
-    background: #4d4d4d !important;
-}
-
-.form-subscribe .form-control:active,
-.form-subscribe .form-control:focus {
-    border-color: gray !important;
-}
-
-.form-subscribe .form-control::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #ccc;
-    font-style: italic;
-}
-
-.form-subscribe .form-control::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #ccc;
-    font-style: italic;
-}
-
-.form-subscribe .form-control:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #ccc;
-    font-style: italic;
-}
-
-.form-subscribe .form-control:-moz-placeholder {
-    /* Firefox 18- */
-    color: #ccc;
-    font-style: italic;
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vital Up &mdash; Equipamentos Médicos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Estrutura comercial e técnica voltada para equipamentos médicos de imagem (ultrassom e densitometria): venda, serviços de manutenção, instalação e treinamento.">
+    <meta name="keywords" content="ultrassom diagnostico, ultrassom medico, transesofagico, convexo, linear, setorial, laparoscopico, doopler, densitometria ossea, densitometria, cabeca femur, qualidade ossea">
+    <meta name="robots" content="index,follow">
+    <meta name="geo.placename" content="Uberlândia-MG">
+    <meta name="geo.region" content="MG-BR">
+    <meta name="revisit-after" content="1 day">
+    <meta name="language" content="Portuguese">
+    <meta name="generator" content="N/A">
+    <meta name="author" content="Vital UP">
+    <meta property="og:region" content="Brasil">
+    <meta property="og:url" content="https://www.vitalup.com.br/">
+    <meta property="og:site_name" content="Vital UP">
+    <meta property="og:description" content="Home - Estrutura comercial e técnica voltada para equipamentos médicos de imagem (ultrassom e densitometria): venda, serviços de manutenção, instalação e treinamento.">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+        <!-- .site-mobile-menu -->
+
+
+        <div class="site-navbar-wrap">
+
+            <div class="site-navbar site-navbar-target js-sticky-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-md-2">
+                            <h1 class="my-0 site-logo">
+                                <a href="index.html"><img src="images/vitalup_logo_blank.png" alt="Image" class="img-fluid mb-2"></a>
+                            </h1>
+                        </div>
+                        <div class="col-6 col-md-8">
+                            <nav class="site-navigation text-right" role="navigation">
+                                <div class="container">
+                                    <div class="d-inline-block d-lg-block ml-md-0 mr-auto py-3">
+                                        <a href="#" class="site-menu-toggle js-menu-toggle text-black">
+                                            <span class="icon-menu h3"></span> <span class="menu-text">Menu</span>
+                                        </a>
+                                    </div>
+
+                                    <ul class="site-menu main-menu js-clone-nav d-none d-lg-none">
+                                        <li><a href="#home-section" class="nav-link">Home</a></li>
+                                        <li><a href="#what-we-do-section" class="nav-link">O que fazemos</a></li>
+                                        <li><a href="#about-section" class="nav-link">Sobre nós</a></li>
+                                        <li><a href="#portfolio-section" class="nav-link">Produtos</a></li>
+                                        <li><a href="#contact-section" class="nav-link">Contato</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END .site-navbar-wrap -->
+        <div class="site-blocks-cover" id="home-section">
+            <div class="img-wrap">
+                <div class="owl-carousel slide-one-item hero-slider">
+                    <div class="slide">
+                        <img class="scale-down" src="images/home/echoStation-mala-aberta.png" alt="Image">
+                    </div>
+                    <div class="slide">
+                        <img class="scale-down" src="images/home/FT-422-vertical.png" alt="Image">
+                    </div>
+                    <div class="slide">
+                        <img class="scale-down" src="images/home/evus5-maleta-aberta.png" alt="Image">
+                    </div>
+                    <div class="slide">
+                        <img class="scale-down" src="images/home/echoStation-mala-aberta.png" alt="Image">
+                    </div>
+                </div>
+            </div>
+            <div class="container home-text">
+                <div class="row">
+                    <div class="col-md-6 ml-auto align-self-center">
+                        <div class="intro">
+                            <!-- <h1 class="title text-primary mb-1">Vital Up</h1> -->
+                            <h1 class="animated swing bounce delay-0.5s">Vital
+                                <span class="text-green">UP</span>
+                            </h1>
+                            <div class="text">
+                                <span class="animated fadeInRightBig delay-3.5s text-about-section">Tecnologia aplicada à saúde</span>
+                                <p><a href="#portfolio-section" class="btn btn-outline-primary btn-md">Saiba Mais</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END .site-blocks-cover -->
+
+        <div class="site-section" id="about-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-12 section-title">
+                        <span class="text-justify text-center sub-title mb-2 d-block">Sobre Nós</span>
+                        <h3 class="text-about-section">A Vital UP surgiu para solucionar e facilitar o acesso de clínicas e hospitais a equipamentos médicos de ponta. Nossos clientes se sentem tranquilos sabendo que na Vital UP os processos de compra, instalação e treinamento são bem
+                            mais eficientes e agradáveis. Aqui, todas as suas necessidades são atendidas de forma rápida, eficaz e de maneira econômica.</h3>
+                        <p class="text-justify text-center text-about-info mt-5"><a href="#portfolio-section" class="btn btn-outline-primary">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 ml-auto">
+                        <div class="row">
+
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                                <div class="service h-100">
+                                    <h3 class="title text-primary mb-3">Missão</h3>
+                                    <span class="text-justify">Ajudar médicos e empresários da área de saúde a oferecerem exames de imagem
+                    com alta qualidade,
+                    melhor custo benefício e sem se preocupar com manutenção dos equipamentos</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                                <div class="service h-100">
+                                    <h3 class="title text-primary mb-3">Visão</h3>
+                                    <span class="text-justify">Ser reconhecido como a principal opção do mercado mineiro não na venda de
+                    equipamento e manutenção,
+                    mas também no cultivo de relacionamentos sólidos e duradouros com nossos clientes</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                                <div class="service h-100">
+                                    <h3 class="title text-primary mb-3">Valores</h3>
+                                    <span class="text-justify">Criar e manter relacionamentos com ética, honestidade e respeito. Servir
+                    sempre com amor, dedicação
+                    e empatia.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END .site-section -->
+
+        <div class="site-section" id="what-we-do-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5">
+                        <img src="images/home/work.jpg" alt="Image" class="img-fluid img-rounded">
+                    </div>
+                    <div class="col-lg-5 ml-auto section-title">
+                        <h2 class="title text-sub-title-section mb-3">O que fazemos</h2>
+                        <p class="mb-4">Oferecemos estrutura comercial e técnica para atender o mercado médico hospitalar.</p>
+                        <div class="d-flex">
+                            <ul class="list-unstyled ul-check success mr-5">
+                                <li>Venda</li>
+                                <li>Serviços de manutenção corretiva e preventiva</li>
+                            </ul>
+                            <ul class="list-unstyled ul-check success mr-5">
+
+                                <li>Instalação</li>
+                                <li>Treinamento e aplicação</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- .END site-section -->
+
+                <div class="site-section" id="what-we-do-section">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-5">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .END site-section -->
+
+                    <div class="site-section" id="portfolio-section">
+                        <div class="container">
+                            <div class="row mb-5 ">
+                                <div class="col-md-7 section-title text-center mx-auto">
+                                    <span class="sub-title mb-2 d-block">Nossos Produtos</span>
+                                    <h2 class="text-about-section text-center">Adoramos o que fazemos e garantimos qualidade em tudo, veja o que selecionamos para você</h2>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-lg-6 mb-4 mb-lg-0">
+                                    <img src="images/home/ultrassom_icon.jpg" alt="Image" class="img-fluid img-rounded">
+                                </div>
+                                <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+                                    <h2 class="title text-green mb-4">Ultrassom</h2>
+                                    <p class="text-justify mb-4">Os equipamentos de Ultrassom Saevo possuem fluxo de trabalho simplificado, totalmente voltado aos médicos brasileiros, além disso possui qualidade de imagem incrível e se adapta a várias aplicações como: cardiologia,
+                                        medicina interna, vascular e ginecologia. </p>
+                                    <p class="title text-blue-light mb-1"><a href="ultrassound.html" class="readmore">Conheça nossos
+                      produtos</a></p>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <br>
+                                <br>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+                                    <img src="images/home/densitometria-analise_icon.png" alt="Image" class="img-fluid img-rounded">
+                                </div>
+                                <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1">
+                                    <h3 class="title text-green mb-4">Densitometria Óssea</h3>
+                                    <p class="text-justify mb-4">Os equipamentos de Densitometria Óssea Echolight apresentam a revolucionária tecnologia REMS, que realiza o exame de forma rápida, independente do operador e sem o uso de radiação. </p>
+                                    <p class="text-blue-light mb-4"><a href="densitometry.html" class="readmore">Conheça nossos
+                      produtos</a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- END .site-section -->
+
+                <div class="site-section" id="contact-section">
+                    <div class="container">
+                        <form method="post" action="envia.php" class="contact-form" id="">
+                            <div class="section-title text-center mb-5">
+                                <h2 class="title text-primary">Contato</h2>
+                                <p class="mb-4">Estamos aqui sempre que precisar!</p>
+                                <div class="text cf design-01">
+                                    <div class="text-content">
+                                        <p>Por favor, preencha o formulário abaixo e um de nossos representantes entrará em contato com você em breve.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-4 mb-md-0">
+                                        <input id="name" type="text" class="form-control" name="name" required="" value="" placeholder="Nome" required="true">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="phone" type="text" class="form-control" placeholder="Telefone" required="true">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <input id="email" type="email" class="form-control" placeholder="e-mail" required="true">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <textarea id="message" class="form-control" name="message" id="message" required="true" cols="30" rows="10" placeholder="Messagem"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <button type="submit" name="submit" class="btn btn-primary btn-md">Enviar Mensagem</button>
+                                    </div>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- END .site-section -->
+
+            </div>
+        </div>
+        <!-- END .site-section -->
+
+        <footer class="site-footer mt-5">
+            <div class="container">
+                <div class="section-title text-center mb-6">
+                    <h2>Fale conosco</h2>
+                    <p class="mb-4">contato@vitalup.com.br</p>
+                    <p class="mb-4">(34) 9 9140-8031</p>
+                    <div class="text cf design-01">
+                        <div class="text-content">
+                            <p>Uberlândia, Minas Gerais</p>
+                        </div>
+                    </div>
+                    <div class="row pt-5 mt-5 text-center">
+                        <div class="col-md-12">
+                            <div class="mb-8">
+                                <a href="https://www.instagram.com/vital_up_oficial/" class="pl-3 pr-3"><span
+                  class="icon-instagram"></span></a>
+                                <a href="https://api.whatsapp.com/send?phone=5534991408031&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20equipamentos%20Saevo." class="pl-3 pr-3"><span class="icon-whatsapp"></span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved </i><a href="https://candletech.com.br" target="_blank"> Candle Tech</a>
+                        </p>
+                    </div>
+                </div>
+        </footer>
+        </div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/stickyfill.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
