@@ -9,6 +9,11 @@ $name = $_POST["name"];
 $from = $_POST["email"];
 $subject = "Contato - Vital UP - Site";
 $text = $_POST["message"];
+$phone = $_POST["phone"];
+
+$msg = "Olá, meu nome é $nome,
+Estou entrando em contato por: $text, em caso de dúvida meu contato é: $phone
+Aguardo retorno.";
 
 
 
@@ -18,7 +23,7 @@ $params = array(
 	'to'        => 'anapessoa@vitalup.com.br',
 	'subject'   => $subject,
 	'html'      => $text,
-	'text'      => $text,
+	'text'      => $msg,
 	'from'      => $from,
 );
 
@@ -47,17 +52,11 @@ $response = curl_exec($session);
 // print everything out
 //var_dump($response,curl_error($session),curl_getinfo($session));
 
-if($response->statusCode() == 202){
-    echo ("<SCRIPT LANGUAGE='JavaScript'>
+echo ("<SCRIPT LANGUAGE='JavaScript'>
 	window.alert('Enviado com Sucesso !')
 	window.location.href='index.html';
 	</SCRIPT>");
-}else{
-    echo ("<SCRIPT LANGUAGE='JavaScript'>
-	window.alert('Ocorreu um erro ao enviar, tente novamente.')
-	window.location.href='index.html';
-	</SCRIPT>");
-}
 
 curl_close($session);
 
+?>
