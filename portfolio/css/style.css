@@ -495,7 +495,6 @@ body.offcanvas #colorlib-aside {
     -o-transform: translateX(0);
     transform: translateX(0);
     width: 300px;
-    background: #f2f3f7;
     z-index: 999;
     position: fixed;
 }
