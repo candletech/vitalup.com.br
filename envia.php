@@ -11,32 +11,55 @@ $subject = "Contato - Vital UP - Site";
 $text = $_POST["message"];
 $phone = $_POST["phone"];
 
-$msg = "Olá, meu nome é $nome,
+$msg = "Olá, meu nome é $name,
 Estou entrando em contato por: $text, em caso de dúvida meu contato é: $phone
 Aguardo retorno.";
 
 
-
-$params = array(
-	'api_user'  => $user,
-	'api_key'   => $pass,
-	'to'        => 'anapessoa@vitalup.com.br',
-	'subject'   => $subject,
-	'html'      => $text,
-	'text'      => $msg,
-	'from'      => $from,
+$header = array(
+	'Authorization: Bearer' => $SENDGRID_API_KEY,
+	'Content-Type' => 'application/json',
 );
 
-$request =  $url.'api/mail.send.json';
+$data = array (
+	'personalizations' => 
+	array (
+	  0 => 
+	  array (
+		'to' => 
+		array (
+		  0 => 
+		  array (
+			'email' => 'anapessoa@vitalup.com.br',
+		  ),
+		),
+	  ),
+	),
+	'from' => 
+	array (
+	  'email' => $from,
+	),
+	'subject' => $subject,
+	'content' => 
+	array (
+	  0 => 
+	  array (
+		'type' => 'text/plain',
+		'value' => $msg,
+	  ),
+	),
+);
+
+$request = $url.'api.sendgrid.com/v3/mail/send';
 
 // Generate curl request
 $session = curl_init($request);
 // Tell curl to use HTTP POST
 curl_setopt ($session, CURLOPT_POST, true);
 // Tell curl that this is the body of the POST
-curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
+curl_setopt ($session, CURLOPT_POSTFIELDS, $data);
 // Tell curl not to return headers, but do return the response
-curl_setopt($session, CURLOPT_HEADER, false);
+curl_setopt($session, CURLOPT_HEADER, $header);
 // Tell PHP not to use SSLv3 (instead opting for TLS)
 //curl_setopt($session, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2);
 
