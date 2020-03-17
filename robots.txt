@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.htm
+Sitemap: http://www.vitalup.com.br/sitemap.xml
+User-agent: Googlebot
+Disallow: 
+User-agent: googlebot-image
+Disallow: 
+User-agent: googlebot-mobile
+Disallow: 
+User-agent: MSNBot
+Disallow: /
+User-agent: Slurp
+Disallow: 
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /images
+Allow: /images/echos
+Allow: /images/echostation
+Allow: /images/evus 5
+Allow: /images/evus 8
+Allow: /images/FT-412
+Allow: /images/FT-422
