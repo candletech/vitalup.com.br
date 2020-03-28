@@ -1492,14 +1492,14 @@ h6 {
 
 #notfound {
     position: relative;
-    height: 100vh;
+    height: 60vh;
     background-color: #fafbfd;
 }
 
 #notfound .notfound {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -1622,4 +1622,96 @@ h6 {
     .notfound h2 {
         font-size: 18px;
     }
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    clear: both;
+}
+
+
+/*/////// Navigation ///////*/
+
+#navigation h1 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#navigation {
+    position: relative;
+    float: left;
+    background: transparent;
+    margin: 0 1% 0 1%;
+}
+
+#navigation,
+#navlist {
+    min-width: 300px;
+    margin: 10px;
+}
+
+#navlist li {
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 160%;
+    display: block;
+    text-decoration: none;
+    padding: 5px 0 5px 0;
+    list-style: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#navlist li:last-child {
+    border: none;
+}
+
+#navlist li a {
+    text-decoration: none;
+    color: #444;
+}
+
+
+/*#navlist li a:hover {}*/
+
+#navlist li a {
+    font-weight: 300!important;
+}
+
+#navlist li:after {
+    font-family: "font awesome"!important;
+    float: right;
+}
+
+
+/**ARROWS**/
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    float: right;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }

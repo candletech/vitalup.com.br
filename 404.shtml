@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vital UP</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
+
+    <!-- Font Awesome Icon -->
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="notfound">
+        <div class="notfound">
+            <div class="notfound-bg">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <h2>A página que você está procurando <br> não foi encontrada.</h2>
+            <a href="index.html">Voltar para o início</a>
+            <div>
+                <a href="https://www.instagram.com/vital_up_oficial/" class="pl-3 pr-3"><span
+                    class="icon-instagram"></span></a>
+                <a href="http://bit.ly/whatsapp_vitalup" class="pl-3 pr-3"><span class="icon-whatsapp"></span></a>
+                <a href="http://http://facebook.com/vitalup.oficial" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
+                <a href="mailto:contato@vitalup.com.br?Subject=Contato - Site" class="pl-3 pr-3"><span class="icon-envelope"></span></a>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="wrapper">
+        <div id="navigation">
+
+            <h2 class="text-justify">Ultrassom Portátil</h2>
+            <ul id="navlist">
+                <li><a href="ultrassom-saevo-evus-5.html">Ultrassom Evus 5</a></li>
+                <li><a href="ultrassom-saevo-evus-8.html">Ultrassom Evus 8</a></li>
+            </ul>
+        </div>
+
+        <div id="navigation">
+
+            <h2>Ultrassom Transportável</h2>
+            <ul id="navlist">
+                <li><a href="ultrassom-saevo-FT-412.html">Ultrassom FT-412</a></li>
+                <li><a href="ultrassom-saevo-FT-422.html">Ultrassom FT-422</a></li>
+            </ul>
+        </div>
+
+        <div id="navigation">
+            <h2>Densitometria</h2>
+            <ul id="navlist">
+                <li><a href="densitometria-echolight-echos.html">Densitometria EchoS</a></li>
+                <li><a href="densitometria-ossea-echolight-echostation.html">Densitometria EchoStation</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+</body>
+
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>

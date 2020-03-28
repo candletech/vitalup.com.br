@@ -1,91 +1,72 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-<loc>https://vitalup.com.br/</loc>
-<lastmod>2020-03-04T20:28:17+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/index.html</loc>
-<lastmod>2020-03-04T20:28:17+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/ultrassound.html</loc>
-<lastmod>2020-02-28T17:56:55+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/densitometry.html</loc>
-<lastmod>2020-02-28T17:55:39+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/evus5.html</loc>
-<lastmod>2020-02-28T17:56:55+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/evus8.html</loc>
-<lastmod>2020-02-28T17:55:39+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/ft412.html</loc>
-<lastmod>2020-02-28T17:55:38+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/ft422.html</loc>
-<lastmod>2020-02-28T17:55:38+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/echos.html</loc>
-<lastmod>2020-02-28T17:55:38+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/echostation.html</loc>
-<lastmod>2020-02-28T17:55:38+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/uploads/sheet_evus5.pdf</loc>
-<lastmod>2020-02-20T20:46:10+00:00</lastmod>
-<priority>0.51</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/uploads/sheet_evus8.pdf</loc>
-<lastmod>2020-02-20T20:47:07+00:00</lastmod>
-<priority>0.51</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/uploads/sheet_ft412.pdf</loc>
-<lastmod>2020-02-20T20:46:22+00:00</lastmod>
-<priority>0.51</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/uploads/sheet_ft422.pdf</loc>
-<lastmod>2020-02-20T20:47:45+00:00</lastmod>
-<priority>0.51</priority>
-</url>
-<url>
-<loc>https://vitalup.com.br/uploads/sheet_EchoS_ENG.pdf</loc>
-<lastmod>2020-02-20T20:46:32+00:00</lastmod>
-<priority>0.51</priority>
-</url>
-<url>
-<loc>
-https://vitalup.com.br/uploads/echolight_catalogo.pdf
-</loc>
-<lastmod>2020-02-20T20:46:24+00:00</lastmod>
-<priority>0.51</priority>
-</url>
-<url>
-<loc>
-https://vitalup.com.br/uploads/sheet_EchoStation_ENG.pdf
-</loc>
-<lastmod>2020-02-20T20:47:12+00:00</lastmod>
-<priority>0.51</priority>
-</url>
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>http://vitalup.com.br/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/densitometria-ossea-echolight.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/densitometria-ossea-echolight-echostation.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/ultrassom-saevo.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/densitometria-echolight-echos.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/uploads/sheet_EchoStation_ENG.pdf</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/uploads/echolight_catalogo.pdf</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/index.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/ultrassom-saevo-FT-412.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/uploads/sheet_ft412.pdf</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/ultrassom-saevo-FT-422.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/ultrassom-saevo-evus-5.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/uploads/sheet_evus5.pdf</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/ultrassom-saevo-evus-8.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/uploads/sheet_EchoS_ENG.pdf</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/uploads/sheet_ft422.pdf</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://vitalup.com.br/uploads/sheet_evus8.pdf</loc>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>
+<!--<guid value="dd32ec7e-8e6a-479b-810c-e4f06cdcd6a9" />-->

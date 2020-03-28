@@ -15,7 +15,6 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Disallow: /images
 Allow: /images/echos
 Allow: /images/echostation
 Allow: /images/evus 5
